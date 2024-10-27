@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <tittle></tittle>
+        <style>
+            *{
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .Container{
+                min-height: 100vh;
+                background-color: #B7B7B7;
+                line-height: 1.5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color:white;
+
+                    }
+                    form{
+                background-color:#0e0e0e; ;
+                width: 400px;
+                padding: 30px;
+                box-shadow: 20px 20px 0px rgb(52, 49, 49);
+                border: 3px solid black;
+                border-radius: 10px;
+                /* background-image: url(https://images.unsplash.com/photo-1721332150382-d4114ee27eff?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                background-size: ; */
+            }
+            form input{
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                margin-top: 8px;
+                border: none;
+                outline: none;
+                border: 1px solid gray;
+                border-radius: 4px;}
+            button{
+                width: 100%;
+                padding: 10px;
+                border: none;
+                background-color: blue;
+                color: white;
+                border-radius: 4px;
+            }
+             label{
+                color: white;
+            }
+            form input:hover{
+                background-color: rgba(147, 137, 133, 0.178);
+                border: 1px solid rgb(40, 36, 32);
+                color: white;
+            }
+            .check{
+                width: fit-content;
+                margin-left: 10px;
+                accent-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <form autocomplete="Off">
+        <Center><h2>Login Page</h2></Center>
+        <label for="Username">Username</label><br>
+        <input type="text" id="Username" placeholder="Enter  Username" name="Username" required minlength="5" maxlength="8"><br>
+        <label for="password">password</label><br>
+
+        <input type="password" id="password" placeholder="Enter  password" name="password" required minlength="5" maxlength=""><br>
+        <label for="checkbox">Remember me</label>
+        <input type="checkbox" id="Checkbox" name="checkbox" class="check" required><br>
+        <button type="submit">submit</button>
+    </form>
+        
+    </body>
+</html>
